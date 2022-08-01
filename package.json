@@ -1,0 +1,11 @@
+{
+
+  "author": {
+    "name": "To Viet",
+    "email": "tothangasin@gmail.com"
+  },
+
+  "scripts": {
+    "test": "node test.js"
+  }
+}
