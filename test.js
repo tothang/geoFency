@@ -8,7 +8,7 @@ const geoFence = require('./geoFence.js');
 //
 // set up the locations arrary
 //
-var loc = {
+let loc = {
   //location info
   locID:"psa_1",
   label: "name",
@@ -34,7 +34,7 @@ console.log("idx = ", geofence.getLocIdx("psa_1"));
 // create geo fence based on the points in an array
 //      pts must be arranged in order in a single direction of rotation from the reference pt
 //
-var ptArr = [
+let ptArr = [
 /*
 {lon: 0.004, lat: 0.004},
 {lon: -0.005, lat: 0.005},
@@ -57,7 +57,7 @@ var ptArr = [
 ];
 
 console.log("createGeofence :");
-var fence = [];
+let fence = [];
 fence = geofence.createGeofence(ptArr, 0);
 console.log("num of pts = ", fence.length);
 console.log(fence);
@@ -66,9 +66,9 @@ console.log(fence);
 //
 // check if i am nearby the location
 //
-var myLon = -0.127758 + 0.005;
-var myLat = 51.507351 + 0.005;
-var locIdx = 0;
+let myLon = -0.127758 + 0.005;
+let myLat = 51.507351 + 0.005;
+let locIdx = 0;
 
 console.log("my location = ", myLon, myLat);
 console.log("isNear :");
